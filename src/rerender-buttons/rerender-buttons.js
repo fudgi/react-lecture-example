@@ -11,6 +11,8 @@ const RenderButtons = () => {
   const handleCount2 = () => {
     setCount2(count2 + 1)
   }
+
+  //const clear = () => {}
   return (
     <div>
       <button onClick={handleCount1}>счетчик 1</button>

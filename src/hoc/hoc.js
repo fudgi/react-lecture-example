@@ -1,1 +1,3 @@
-const HOC = ({}) => {}
+const HOC = () => {}
+
+export default HOC
