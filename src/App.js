@@ -1,11 +1,20 @@
-import UseMemoTest from './use-memo-test/use-memo-test'
+// import { useState, useEffect } from 'react'
+import RenderButtons from './rerender-buttons/rerender-buttons'
 import './App.css'
 
 function App() {
+  // const [time, setTime] = useState(0)
+
+  // useEffect(() => {
+  //   const timer = setInterval(() => setTime((cur) => cur + 1), 500)
+  //   return () => clearInterval(timer)
+  // }, [])
+
   return (
     <div className="App">
       <header className="App-header">
-        <UseMemoTest />
+        {/* <p>{time}</p> */}
+        <RenderButtons />
       </header>
     </div>
   )

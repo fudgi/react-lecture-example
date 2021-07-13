@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Counter from './counter'
 
-const UseMemoTest = () => {
+const RenderButtons = () => {
   const [count1, setCount1] = useState(0)
   const [count2, setCount2] = useState(0)
 
@@ -21,4 +21,4 @@ const UseMemoTest = () => {
   )
 }
 
-export default UseMemoTest
+export default RenderButtons
