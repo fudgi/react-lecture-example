@@ -1,8 +1,10 @@
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import convert from './convert'
+import useTime from '../hoc/useScroll'
 
-const USEMemorize = ({ time }) => {
+const USEMemorize = () => {
   const [text, setText] = useState('')
+  const time = useTime()
 
   const handleText = (e) => {
     setText(e.target.value)

@@ -3,26 +3,31 @@ import RenderButtonsExample from './rerender-buttons/rerender-buttons'
 import LayoutEffectExample from './layout-effect/layout-effect'
 import UseMemoExample from './use-memo/use-memo'
 import PortalExample from './portal/portal'
+import HOC from './hoc/hoc'
+import useScroll from './hoc/useScroll'
 import './App.css'
 
 function App() {
-  // const [time, setTime] = useState(0)
+  // const [time, setTime] = useState(1)
 
   // useEffect(() => {
   //   const timer = setInterval(() => setTime((cur) => cur + 1), 500)
   //   return () => clearInterval(timer)
   // }, [])
+  // const time = useScroll()
 
   return (
     <div className="App">
       <header className="App-header">
-        <LayoutEffectExample />
+        {/* <LayoutEffectExample /> */}
         {/* <p>{time}</p> */}
-        {/* <RenderButtonsExample /> */}
-        {/* <UseMemoExample time={time} /> */}
-        {/* <PortalExample /> */}
+        {/* <HOC>
+          <RenderButtonsExample />
+        </HOC> */}
+
+        {/* <UseMemoExample /> */}
+        <PortalExample />
       </header>
-      <div id="portal"></div>
     </div>
   )
 }
